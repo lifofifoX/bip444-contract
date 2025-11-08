@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@scure/btc-signer": "^2.0.1"
+  }
+}
