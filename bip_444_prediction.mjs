@@ -81,7 +81,7 @@ againstBIPWinSettlementTX.addInput(contractInput)
 
 const message = utf8.decode("~FUCK BIP444~".repeat(24))
 if (message.length < MIN_AGAINST_BIP444_OP_RETURN_LENGTH) throw new Error('Message is too short')
-  
+
 againstBIPWinSettlementTX.addOutput({ script: btc.Script.encode([ 'RETURN', message ]), amount: 0n })
 againstBIPWinSettlementTX.addOutputAddress(againstBIPP2TR.address, TOTAL_AMOUNT - SETTLMENT_TX_FEE)
 
